@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Singleton objects in JS allow to create objects directly without a need to define it. Singleton means only one reference accross the application.
+        const emp={
+            empId: 123,
+            empName: "Pratheek",
+            empAddress: "Bangalore"
+        } //An object is internally a dictionary in JS
+        console.log(typeof(emp))
+        console.log(emp)
+
+        emp.empSalary = 45000 //Adding a new property to the object
+
+        //Dispaly all the properties in a loop
+        for(key in emp)
+        {
+            console.log(`The propertyname: ${key} , Value: ${emp[key]}`)
+        }
+
+        //If we create a new object temp which is equal to emp, adding a property in temp reflects in emp as well
+        const temp=emp
+        temp.empAddress="Hassan"
+        console.log(emp.empAddress) //Reflects on all objects, that is why it is called as Singleton objects
+
+        //////Old Function based class in JS/////////
+        const employee=function(id,name,address)
+        {
+            this.empId=id
+            this.empName=name
+            this.empAddress=address
+        }
+
+        const e1=new employee(123,"Pratheek1","Hassan1")
+        console.log(`Mr ${e1.empName} is from ${e1.empAddress} with an ID as ${e1.empId}`)
+        const e2=new employee(e1.empId,e1.empName,e1.empAddress)
+        e2.empAddress="Mysore"
+        console.log(`First guy's location: ${e1.empAddress} and the second guys location is: ${e2.empAddress}`)
+
+
+    </script>
+</body>
+</html>

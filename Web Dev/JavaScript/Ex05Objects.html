@@ -42,7 +42,29 @@
         const e2=new employee(e1.empId,e1.empName,e1.empAddress)
         e2.empAddress="Mysore"
         console.log(`First guy's location: ${e1.empAddress} and the second guys location is: ${e2.empAddress}`)
+        
+        ////////////ES6 Syntax for creating classes and objects//////////////
+        class Customer
+        {
+            constructor(id,name,address,billAmount)
+            {
+                this.id=id
+                this.name=name
+                this.address=address
+                this.billAmount=billAmount
+            }
 
+            display()
+            {
+                console.log(`${this.name} has ordered items worth ${this.billAmount} to be delivered at ${this.address}`)
+            }
+
+            addBillAmount=(amount)=>this.billAmount+=amount
+        }
+        const cst=new Customer(123,"Pro","Vidyanagar",929)
+        cst.display()
+        cst.addBillAmount(99)
+        cst.display()
 
     </script>
 </body>

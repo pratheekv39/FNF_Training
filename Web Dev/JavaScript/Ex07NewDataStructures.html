@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function setExample()
+        {
+            const set=new Set()
+            set.add("Item1")
+            if(set.has("Item1"))
+            {
+                console.log("Item already exists")
+            }
+            else{
+                set.add("Item1")
+            }
+            return set
+        }
+        const data=setExample()
+        window.addEventListener("load",function(){
+                const div=document.querySelector("div")
+                let strContent="<h2>List of items:</h2>"
+                for(const item of data)
+                {
+                    strContent+=`<li>${item}</li>`
+                }
+                div.innerHTML=strContent
+        })
+
+        function mapExample()
+        {
+            //Map stores the data as key-value pairs where key is unique
+            const items=new Map()
+            items.set("Apples",250)
+            items.set("Mangoes",150)
+            items.set("Kiwi",450)
+            items.set("Pomegranate",100)
+        //     for(const element of items)
+        // {
+        //     console.log(`Key:${element}`)
+        // }
+            for(const [key,value] of items)
+            {
+                console.log(`Key:${key},Value:${value}`)
+            }
+        }
+        mapExample()
+    </script>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.addEventListener("load",function(){
+            //alert("Test");
+            let div=document.getElementById("divDisplay");
+            if(localStorage.getItem("userInfo")==null)
+            {
+                div.innerText="No info is saved";        
+            }
+
+            document.getElementById("btnSave").addEventListener("click",function()
+        {
+            let name=document.getElementById("name").value;
+            let email=document.getElementById("email").value;
+            let dob=document.getElementById("date").value;
+            let msg = `Name: ${name}, Email: ${email}, Dob: ${dob}`;
+
+            localStorage.setItem("userInfo",msg)
+            
+            document.getElementById("divDisplay").innerText = msg;
+
+
+        })
+        })
+    </script>
+</head>
+<body>
+    <div>
+        <p>
+            <input type="text" placeholder="Name" id="name"><p>
+            <input type="email" placeholder="Email" id="email"><p>
+            <input type="date" placeholder="Date" id="date"></p><br>
+            <button id="btnSave">Save Content</button>
+        </p>
+    </div>
+    <div id="divDisplay"></div>
+</body>
+</html>

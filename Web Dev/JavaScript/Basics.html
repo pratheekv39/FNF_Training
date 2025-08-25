@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Data types in JS are number, string,boolean, object.
+        //Data types are dynamic in nature.
+        //let,const,var are used to declare the variables in JS(ES6).
+        //let and const were introduced in ES6 for better readability and powerfullness.
+        // const  num=123
+        // alert(num)
+        // alert("The datatype of num is: " +typeof(num))
+        // let data = "Sample text"
+        // alert("The datatype of data is: " +typeof(data))
+        // data=true
+        // alert("The datatype of data is: " +typeof(data))
+        // data ={name:"Pratheek", address: "Bangalore"}
+        // alert("The datatype of data is: "+typeof(data))
+
+        //////////////var vs let////////////////////
+        //Older JS code used to declare variables using var, var is still available as a part of backward compatibility
+        //let is scope based and very powerful compared to var
+        var example="Some text"
+        console.log(example);
+        {
+            var example="sOME MORE TEXT"
+            console.log(example)
+        }
+        console.log(example)
+        //Replace var with let and note the differences.This is called Scoped based variables. let allows scope based variables
+
+        //////////////undefined vs null//////////////
+        //If a variable is defined without assignment, then it is called as undefined
+        let apple
+        if(apple==undefined)
+        {
+            console.log("Datatype not defined")
+        }
+        else{
+            console.log("THE DATATYPE OF apple is : "+typeof(apple))
+        }
+        //null is a state when an object is not filled with data.We usually set set null for variables which will be set with objects that come from a return type of a function
+        let obj=null
+        if(obj==null)
+        {
+            console.log("Object is null")
+        }
+        else
+        {
+            console.log("The datatype is : " +typeof(obj))
+        }
+
+        /////////// == vs === ///////////
+        const value=123
+        // if(value=="123") // == checks only for the value and not data type i.e., converts into a common type implicitly before comparing
+        // {
+        //     console.log("They are same")
+        // }
+        // if(value==="123")
+        // {
+        //     console.log("They are same")
+        // }
+        // else{
+        //     console.log("Either the value or the type is mismatched")
+        // }
+
+        ////////////Conversion Example////////////////////
+        //All inputs come to the App as strings, we can convert them to a number using parseInt and parseFloat functions
+        let num1=parseFloat(prompt("Enter the first number: ")) //Default datatype input is string, convert it expicitly into any other data type as, for example '+'' operator performs concatenation instead of adding
+        let num2=parseFloat(prompt("Enter the second number: "))
+        
+        alert("Data type of num1 is: "+typeof(num1)+" Data type of num2 is: "+typeof(num2))
+        if(isNan(num1)||isNan(num2))
+        {
+            console.log("You cannot perform math operations on Non Numeric Data")
+        }
+        else{
+        const message=`The added number is ${num1+num2}, The subtracted number is: ${num1-num2}, Multiplied value is ${num1*num2}, Divided value is ${num1/num2}`
+        alert(message)
+        }
+
+
+    </script>
+    
+</body>
+</html>

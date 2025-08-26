@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./emp.css">
+    <script src="./empManager.js"></script>
+    <script src="./htmlHelper.js"></script>
+    <script>
+        
+        window.onload = () => {
+            mapEvents();
+        };
+        const mgr=new EmployeeRepo();
+        function mapEvents(){
+            let saveBtn=document.querySelector("button");
+            saveBtn.addEventListener("click",()=>addRecord())
+        }
+
+        function addRecord() {
+    const id = $("empId").value;
+    const name = $("empName").value;
+    const addr = $("empAddress").value;
+    const sal = $("empSalary").value;
+
+    const emp = new Employee(id, name, addr, sal);
+    mgr.addEmp(emp);
+
+    alert("Employee Added successfully");
+}
+
+    </script>
+    
+</head>
+<body>
+    <div>
+        <nav>
+            <a href="#">View All</a>
+            <a href="#">Add New</a>
+        </nav>
+        <div>
+            <h2>Table of Employees</h2>
+            <hr>
+            <table id="empTable">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+        </div>
+        <div>
+            <h2>Emp details</h2>
+            <hr>
+            <p><input type="number" id="empId" placeholder="Employee Id"></p>
+            <p><input type="text" id="empName" placeholder="Employee Name"></p>
+            <p><input type="text" id="empAddress" placeholder="Employee Address"></p>
+            <p><input type="number" id="empSalary" placeholder="Employee Salary"></p>
+            <p>
+                <button onclick="addRecord()">Add Record</button>
+                <button onclick="updateRecord()">Update Record</button>
+            </p>
+            
+        </div>
+    </div>
+    <div id="disp"></div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+C:\Users\6152782\Desktop\Training\SampleConApp\Hackathon_Assignment1\Hackathon_Assignment1\bin\Debug\net8.0\Hackathon_Assignment1.exe
+C:\Users\6152782\Desktop\Training\SampleConApp\Hackathon_Assignment1\Hackathon_Assignment1\bin\Debug\net8.0\Hackathon_Assignment1.deps.json
+C:\Users\6152782\Desktop\Training\SampleConApp\Hackathon_Assignment1\Hackathon_Assignment1\bin\Debug\net8.0\Hackathon_Assignment1.runtimeconfig.json
+C:\Users\6152782\Desktop\Training\SampleConApp\Hackathon_Assignment1\Hackathon_Assignment1\bin\Debug\net8.0\Hackathon_Assignment1.dll
+C:\Users\6152782\Desktop\Training\SampleConApp\Hackathon_Assignment1\Hackathon_Assignment1\bin\Debug\net8.0\Hackathon_Assignment1.pdb
+C:\Users\6152782\Desktop\Training\SampleConApp\Hackathon_Assignment1\Hackathon_Assignment1\obj\Debug\net8.0\Hackathon_Assignment1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\6152782\Desktop\Training\SampleConApp\Hackathon_Assignment1\Hackathon_Assignment1\obj\Debug\net8.0\Hackathon_Assignment1.AssemblyInfoInputs.cache
+C:\Users\6152782\Desktop\Training\SampleConApp\Hackathon_Assignment1\Hackathon_Assignment1\obj\Debug\net8.0\Hackathon_Assignment1.AssemblyInfo.cs
+C:\Users\6152782\Desktop\Training\SampleConApp\Hackathon_Assignment1\Hackathon_Assignment1\obj\Debug\net8.0\Hackathon_Assignment1.csproj.CoreCompileInputs.cache
+C:\Users\6152782\Desktop\Training\SampleConApp\Hackathon_Assignment1\Hackathon_Assignment1\obj\Debug\net8.0\Hackathon_Assignment1.dll
+C:\Users\6152782\Desktop\Training\SampleConApp\Hackathon_Assignment1\Hackathon_Assignment1\obj\Debug\net8.0\refint\Hackathon_Assignment1.dll
+C:\Users\6152782\Desktop\Training\SampleConApp\Hackathon_Assignment1\Hackathon_Assignment1\obj\Debug\net8.0\Hackathon_Assignment1.pdb
+C:\Users\6152782\Desktop\Training\SampleConApp\Hackathon_Assignment1\Hackathon_Assignment1\obj\Debug\net8.0\Hackathon_Assignment1.genruntimeconfig.cache
+C:\Users\6152782\Desktop\Training\SampleConApp\Hackathon_Assignment1\Hackathon_Assignment1\obj\Debug\net8.0\ref\Hackathon_Assignment1.dll

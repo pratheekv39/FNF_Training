@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //HTML Document can be programmatically referred using DOM.
+        //Document object Model(DOM) is a tree structure of the element within a HTML document. They can be be iterated and traversed using Nodes,Parents, Children, and siblings
+        //Html comes with APIs to access the elements by their ID,Classname,elementname,ID must be unique to the document.
+
+        function compute(v1,v2,option)
+        {
+            switch(option)
+            {
+                case "Add": return v1+v2;
+                case "Subtract": return v1-v2;
+                case "Multiply": return v1*v2;
+                case "Divide": 
+                if(v2!=0)
+                    {return v1/v2} 
+                else 
+                    return "Divide by Zero error";
+                default: return 0
+            }
+        }
+        window.addEventListener("load",function(){
+            //Called after the current HTML Document is loaded into the browser
+            const btn=document.getElementById("btnGet")
+            if(btn==undefined)
+            {
+                console.log("Btn Id is wrong")
+            }
+            btn.addEventListener("click",function(){
+                //Get the values of the inputs
+                //Compute the result
+                //Set the result to the span
+                const v1=parseFloat(document.getElementById("firstValue").value)
+                const v2=parseFloat(document.getElementById("secondValue").value)
+                const option=document.getElementById("slOptions").value
+                const result=compute(v1,v2,option)
+                const sp=document.getElementById("spDisplay")
+                sp.innerText="The Result is: "+result
+            })
+        })
+
+    </script>
+    <div>
+        <h2>Calc Program</h2>
+        <hr>
+        <p><input type="number" id="firstValue" placeholder="First Value"></p>
+        <p>
+            <select id="slOptions">
+                <option>----Select</option>
+                <option>Add</option>
+                <option>Subtract</option>
+                <option>Multiply</option>
+                <option>Divide</option>
+            </select>
+        </p>
+        <p><input type="number" id="secondValue" placeholder="Second Value"></p>
+        <p><button id="btnGet">Get Result</button></p>
+        <p><span style="border:2px solid burlywood" id="spDisplay">Result</span></p>
+    </div>
+</body>
+</html>

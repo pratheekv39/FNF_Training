@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Validation</title>
+</head>
+<body>
+  <h2>Form Validation</h2>
+  <form id="myForm">
+    <label>Username:</label>
+    <input type="text" id="username"><br><br>
+
+    <label>Pin:</label>
+    <input type="text" id="pin"><br><br>
+
+    <label>States:</label>
+    <select id="states">
+      <option value="">--Select--</option>
+      <option value="option1">option1</option>
+      <option value="option2">option2</option>
+    </select><br><br>
+
+    <label><input type="checkbox" id="validatePin"> Validate Pin</label><br>
+    <label><input type="checkbox" id="testMe"> Test me</label><br><br>
+
+    <label>Choose one:</label><br>
+    <input type="radio" name="dairy" value="Milk"> Milk<br>
+    <input type="radio" name="dairy" value="Butter"> Butter<br>
+    <input type="radio" name="dairy" value="Cheese"> Cheese<br><br>
+
+    <button type="button" onclick="validateForm()">Check Form</button>
+  </form>
+
+  <p id="message"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+C:\Users\6152782\Desktop\Training\End2EndApplication\EndToEndApplication\ExpenseManagerLib\bin\Debug\ExpenseManagerLib.dll
+C:\Users\6152782\Desktop\Training\End2EndApplication\EndToEndApplication\ExpenseManagerLib\bin\Debug\ExpenseManagerLib.pdb
+C:\Users\6152782\Desktop\Training\End2EndApplication\EndToEndApplication\ExpenseManagerLib\obj\Debug\ExpenseManagerLib.csproj.AssemblyReference.cache
+C:\Users\6152782\Desktop\Training\End2EndApplication\EndToEndApplication\ExpenseManagerLib\obj\Debug\ExpenseManagerLib.csproj.CoreCompileInputs.cache
+C:\Users\6152782\Desktop\Training\End2EndApplication\EndToEndApplication\ExpenseManagerLib\obj\Debug\ExpenseManagerLib.dll
+C:\Users\6152782\Desktop\Training\End2EndApplication\EndToEndApplication\ExpenseManagerLib\obj\Debug\ExpenseManagerLib.pdb

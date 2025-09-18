@@ -1,0 +1,11 @@
+C:\Users\6152782\Desktop\Training\End2EndApplication\EndToEndApplication\ExpenseTracker\bin\Debug\ExpenseTracker.exe.config
+C:\Users\6152782\Desktop\Training\End2EndApplication\EndToEndApplication\ExpenseTracker\bin\Debug\ExpenseTracker.exe
+C:\Users\6152782\Desktop\Training\End2EndApplication\EndToEndApplication\ExpenseTracker\bin\Debug\ExpenseTracker.pdb
+C:\Users\6152782\Desktop\Training\End2EndApplication\EndToEndApplication\ExpenseTracker\obj\Debug\ExpenseTracker.csproj.AssemblyReference.cache
+C:\Users\6152782\Desktop\Training\End2EndApplication\EndToEndApplication\ExpenseTracker\obj\Debug\ExpenseTracker.csproj.CoreCompileInputs.cache
+C:\Users\6152782\Desktop\Training\End2EndApplication\EndToEndApplication\ExpenseTracker\obj\Debug\ExpenseTracker.exe
+C:\Users\6152782\Desktop\Training\End2EndApplication\EndToEndApplication\ExpenseTracker\obj\Debug\ExpenseTracker.pdb
+C:\Users\6152782\Desktop\Training\End2EndApplication\EndToEndApplication\ExpenseTracker\bin\Debug\ExpenseManagerLib.dll
+C:\Users\6152782\Desktop\Training\End2EndApplication\EndToEndApplication\ExpenseTracker\bin\Debug\ExpenseManagerLib.pdb
+C:\Users\6152782\Desktop\Training\End2EndApplication\EndToEndApplication\ExpenseTracker\obj\Debug\ExpenseTracker.exe.config
+C:\Users\6152782\Desktop\Training\End2EndApplication\EndToEndApplication\ExpenseTracker\obj\Debug\ExpenseT.567C5DF3.Up2Date

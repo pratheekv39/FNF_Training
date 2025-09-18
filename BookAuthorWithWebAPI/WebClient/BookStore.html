@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Book Store</title>
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script>
+        const url='http://localhost:5264/api/Book'
+        function callMe()
+        {
+            $("div").hide(2000);
+            $("a:first").click(function(){
+                $("div:first").show(2000);
+                $.get(url,(data)=>{
+                    $("table").find("tr:gt(0)").remove();
+                    for(const book of data)
+                    {
+                        let row=`<tr><td>${book.bookId}</td>
+                            <td>${book.title}</td>
+                            <td>${book.bookPrice}</td>
+                            <td>${book.authorId}</td></tr>`
+                        $("table").append(row)
+                    }
+                })
+            })
+        }
+        $(document).ready(function(){
+            callMe();
+        });
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px; }
+        table { border-collapse: collapse; width: 60%; margin-top: 20px; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        a { cursor: pointer; color: #007bff; text-decoration: underline; }
+        div { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h2>Book Store</h2>
+    <a>Show Books</a>
+    <div>
+        <table>
+            <tr>
+                <th>Book ID</th>
+                <th>Title</th>
+                <th>Price</th>
+                <th>Author ID</th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
